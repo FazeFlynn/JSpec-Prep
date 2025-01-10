@@ -89,6 +89,68 @@
 4. **What does the command `chmod 755` do in Linux?**  
    - Sets permissions to `rwx` for the owner and `rx` for group and others.  
 
+`Permission Codes:`
+
+Permissions for each category (Owner, Group, Others) are calculated by summing these values.
+
+
+### **Examples**
+#### Example 1: `rwxr-xr--`
+| Category | Permissions | Numeric Value |
+|----------|-------------|---------------|
+| Owner    | `rwx`       | 4+2+1 = 7     |
+| Group    | `r-x`       | 4+0+1 = 5     |
+| Others   | `r--`       | 4+0+0 = 4     |
+
+- Resulting Code: **`755`**
+
+---
+
+#### Example 2: `rw-r--r--`
+| Category | Permissions | Numeric Value |
+|----------|-------------|---------------|
+| Owner    | `rw-`       | 4+2+0 = 6     |
+| Group    | `r--`       | 4+0+0 = 4     |
+| Others   | `r--`       | 4+0+0 = 4     |
+
+- Resulting Code: **`644`**
+
+---
+
+#### Example 3: `rwx------`
+| Category | Permissions | Numeric Value |
+|----------|-------------|---------------|
+| Owner    | `rwx`       | 4+2+1 = 7     |
+| Group    | `---`       | 0+0+0 = 0     |
+| Others   | `---`       | 0+0+0 = 0     |
+
+- Resulting Code: **`700`**
+
+---
+
+#### Example 4: `r--r--r--`
+| Category | Permissions | Numeric Value |
+|----------|-------------|---------------|
+| Owner    | `r--`       | 4+0+0 = 4     |
+| Group    | `r--`       | 4+0+0 = 4     |
+| Others   | `r--`       | 4+0+0 = 4     |
+
+- Resulting Code: **`444`**
+
+---
+
+### **Quick Reference Table**
+| Symbolic Permission | Numeric Code |
+|---------------------|--------------|
+| `rwxrwxrwx`         | `777`        |
+| `rwxr-xr-x`         | `755`        |
+| `rw-r--r--`         | `644`        |
+| `r--r--r--`         | `444`        |
+| `rw-------`         | `600`        |
+
+
+Use the `ls -l` command to view current permissions and the `chmod` command to modify them.
+
 ---
 
 ### **Networking**  
