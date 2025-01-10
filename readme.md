@@ -153,7 +153,94 @@ Use the `ls -l` command to view current permissions and the `chmod` command to m
 
 ---
 
-### **Networking**  
+## **Networking**  
+
+### Networking Protocols Summary
+
+**All major networking protocols** across different layers of the OSI and TCP/IP models:
+
+---
+
+### **1. Application Layer Protocols**  
+1. **HTTP (HyperText Transfer Protocol)**: Transfers web pages; operates over TCP (port 80).  
+2. **HTTPS (HTTP Secure)**: Secure version of HTTP using SSL/TLS; operates over TCP (port 443).  
+3. **FTP (File Transfer Protocol)**: Transfers files between systems; uses ports 20 (data) and 21 (control).  
+4. **SFTP (Secure File Transfer Protocol)**: Secure file transfer using SSH (port 22).  
+5. **SMTP (Simple Mail Transfer Protocol)**: Sends emails; operates over port 25 (or 587 with SSL/TLS).  
+6. **IMAP (Internet Message Access Protocol)**: Retrieves emails; supports syncing; port 143 (993 for SSL).  
+7. **POP3 (Post Office Protocol v3)**: Retrieves emails; does not sync; port 110 (995 for SSL).  
+8. **DNS (Domain Name System)**: Resolves domain names to IP addresses; operates on port 53.  
+9. **DHCP (Dynamic Host Configuration Protocol)**: Assigns IP addresses dynamically; uses ports 67/68.  
+10. **SNMP (Simple Network Management Protocol)**: Monitors network devices; operates on port 161.  
+11. **Telnet**: Remote terminal access; insecure; uses port 23.  
+12. **SSH (Secure Shell)**: Secure remote terminal access; uses port 22.  
+13. **NTP (Network Time Protocol)**: Synchronizes clocks; operates on port 123.  
+14. **LDAP (Lightweight Directory Access Protocol)**: Accesses directory services; port 389 (636 for secure).  
+15. **TFTP (Trivial File Transfer Protocol)**: Simplified file transfer; operates on UDP port 69.  
+
+---
+
+### **2. Transport Layer Protocols**  
+1. **TCP (Transmission Control Protocol)**: Connection-oriented, reliable data transfer.  
+2. **UDP (User Datagram Protocol)**: Connectionless, faster but unreliable transfer.  
+
+---
+
+### **3. Network Layer Protocols**  
+1. **IP (Internet Protocol)**: Routes packets; uses IPv4 (32-bit) and IPv6 (128-bit).  
+2. **ICMP (Internet Control Message Protocol)**: Error reporting and diagnostics (e.g., ping).  
+3. **IGMP (Internet Group Management Protocol)**: Manages multicast groups.  
+
+---
+
+### **4. Data Link Layer Protocols**  
+1. **Ethernet**: Standard for LAN communication; supports wired transmission.  
+2. **PPP (Point-to-Point Protocol)**: Encapsulates network traffic over serial links.  
+3. **ARP (Address Resolution Protocol)**: Resolves IP to MAC addresses.  
+4. **RARP (Reverse ARP)**: Resolves MAC addresses to IP addresses.  
+5. **STP (Spanning Tree Protocol)**: Prevents loops in Ethernet networks.  
+
+---
+
+### **5. Routing Protocols**  
+1. **RIP (Routing Information Protocol)**: Distance-vector routing protocol; uses hop count.  
+2. **OSPF (Open Shortest Path First)**: Link-state routing protocol; calculates shortest path.  
+3. **BGP (Border Gateway Protocol)**: Path-vector protocol for inter-domain routing.  
+4. **EIGRP (Enhanced Interior Gateway Routing Protocol)**: Cisco’s hybrid protocol; combines distance-vector and link-state features.  
+
+---
+
+### **6. Wireless Communication Protocols**  
+1. **Wi-Fi (802.11)**: Wireless LAN communication standard.  
+2. **Bluetooth**: Short-range wireless communication.  
+3. **Zigbee**: Low-power wireless protocol for IoT devices.  
+4. **NFC (Near Field Communication)**: Short-range communication for mobile payments.  
+
+---
+
+### **7. Security Protocols**  
+1. **SSL/TLS (Secure Sockets Layer/Transport Layer Security)**: Encrypts data for secure communication.  
+2. **IPSec (Internet Protocol Security)**: Encrypts IP traffic for secure VPNs.  
+3. **Kerberos**: Authentication protocol for secure ticket-based access.  
+4. **HTTPS (HTTP Secure)**: HTTP over SSL/TLS.  
+5. **S/MIME (Secure/Multipurpose Internet Mail Extensions)**: Encrypts emails.  
+
+---
+
+### **8. VPN and Tunneling Protocols**  
+1. **PPTP (Point-to-Point Tunneling Protocol)**: Legacy VPN protocol.  
+2. **L2TP (Layer 2 Tunneling Protocol)**: Secure VPN protocol with IPsec.  
+3. **OpenVPN**: Open-source, highly secure VPN protocol.  
+
+---
+
+### **9. Multicast Protocols**  
+1. **PIM (Protocol Independent Multicast)**: Distributes multicast traffic.  
+2. **IGMP (Internet Group Management Protocol)**: Joins/leaves multicast groups.  
+
+---
+
+
 1. **Which protocol is used to transfer web pages over the internet?**  
    - HTTP  
 
