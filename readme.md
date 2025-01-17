@@ -3012,7 +3012,7 @@ Move disk 1 from rod A to rod C
 ---
 
 
-# Solutions
+# Solved Questions
 
 
 
@@ -3541,11 +3541,6 @@ validSolution("aticatge")    # Output: -1
 **Note:** This solution assumes that the input string should contain exactly one '@' symbol to form a valid email address. If multiple '@' symbols are allowed to form multiple email addresses, the function would need to be adjusted accordingly.
 
 
-
-
-
 $$
-
 \Large\text{End of file}
-
 $$
